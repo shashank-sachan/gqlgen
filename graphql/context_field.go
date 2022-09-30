@@ -20,6 +20,8 @@ type FieldContext struct {
 	Object string
 	// These are the args after processing, they can be mutated in middleware to change what the resolver will get.
 	Args map[string]interface{}
+	// Query arguments
+	Query map[string]interface{}
 	// The raw field
 	Field CollectedField
 	// The index of array in path.
